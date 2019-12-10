@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const TodoForm = () => {
+const TodoForm = ({ dispatch }) => {
+    const [newText, setNewText] = useState('')
+
+    const handleChanges = e => {
+        setNewText(e.target.value);
+    }
+
     return (
         <div>
-            <input type='text' placeholder='Enter Task' />
+            <input type='text'
+                placeholder='Enter Task'
+                name='newTodoText'
+                value={newText}
+                onChange={handleChanges}
+            />
+
+            <button onClick={() => {
+                dispatch({ type: 'ADD_TODO', payload: newText })
+                setNewText('')
+            }}>Add</button>
         </div>
     )
 }

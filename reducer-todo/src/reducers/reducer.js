@@ -7,6 +7,7 @@ export const initialState = {
 };
 
 export const reducer = (state, action) => {
+    console.log(state)
     switch (action.type) {
         case 'ADD_TODO':
             const newTodo = {
@@ -15,7 +16,7 @@ export const reducer = (state, action) => {
                 id: new Date()
             }
             return {
-                todos: [...state, newTodo]
+                todos: [...state.todos, newTodo]
             }
         default:
             return state;
