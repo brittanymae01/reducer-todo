@@ -5,7 +5,7 @@ import { reducer, initialState } from '../reducers/reducer'
 
 const TodoList = () => {
     const [taskState, dispatch] = useReducer(reducer, initialState)
-    console.log(taskState)
+
     const completed = id => {
         dispatch({ type: 'TOGGLE_COMPLETE', payload: id })
     }
