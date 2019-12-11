@@ -16,7 +16,7 @@ const TodoForm = ({ dispatch }) => {
                 onChange={handleChanges}
             />
 
-            <button onClick={() => {
+            <button className='add-button' onClick={() => {
                 dispatch({ type: 'ADD_TODO', payload: newText })
                 setNewText('')
             }}>Add</button>

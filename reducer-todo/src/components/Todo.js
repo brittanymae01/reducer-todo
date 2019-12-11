@@ -1,10 +1,9 @@
 import React from 'react';
 
 
-const Todo = ({ dispatch, ...props }) => {
-    console.log(props)
+const Todo = props => {
     return (
-        <div onClick={() => props.completed(props.todo.id)} >
+        <div className='list-item' onClick={() => props.completed(props.todo.id)} >
             <p style={{ textDecoration: props.todo.completed ? 'line-through' : 'none' }}>{props.todo.item}</p>
         </div >
     )
