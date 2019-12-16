@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+body {
+  padding: 50px;
+  background-color: #66CCFF;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  color:  #003399;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  width: 165px;
+}
+
+.add-button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color: #0066FF;
+  color: #FFF;
+  border: 2px solid #0066FF;
+}
+
+.add-button:hover {
+  background-color: #003399;
+  border: 2px solid #003399;
+  cursor: pointer;
+}
+
+.list {
+  padding: 10px;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.list-item {
+ color: #333;
+  background-color: rgba(255,255,255,.5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.clear-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #0066FF;
+  color: #FFF;
+  border: 2px solid #0066FF;
+  width: 200px;
+}
+
+.clear-button:hover {
+  background-color: #003399;
+  border: 2px solid #003399;
+  cursor: pointer;
+}
+
